@@ -1,0 +1,19 @@
+.chosing {
+    max-width: 800px;
+    padding: 1rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px;
+    grid-template-rows: 200px 200px 200px;
+    grid-gap: 1rem;
+    //grid-template-areas: "paper" "scissors rock";
+    .paper {
+        grid-area: paper;
+    }
+    .scissors {
+        grid-area: scissors;
+    }
+    .rock {
+        grid-area: rock;
+    }
+}

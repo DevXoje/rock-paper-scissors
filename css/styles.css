@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.chosing {
+  max-width: 800px;
+  padding: 1rem;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 200px 200px 200px 200px;
+      grid-template-columns: 200px 200px 200px 200px;
+  -ms-grid-rows: 200px 200px 200px;
+      grid-template-rows: 200px 200px 200px;
+  grid-gap: 1rem;
+}
+
+.chosing .paper {
+  grid-area: paper;
+}
+
+.chosing .scissors {
+  grid-area: scissors;
+}
+
+.chosing .rock {
+  grid-area: rock;
+}
+
+.container {
+  background-color: #3b4363;
+  width: 100%;
+  padding: 30px;
+}
+
+.container header {
+  padding: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border: 1px solid #606e85;
+  border-radius: 10px;
+}
+
+.container header .scoreContainer {
+  background-color: white;
+  padding: 10px 20px;
+  font-size: 10px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.container header .scoreContainer .score {
+  font-size: 35px;
+  color: #2a46c0;
+}
+
+.container main {
+  height: 400px;
+}
+
+.container main .arma {
+  width: 120px;
+  height: 120px;
+  border-radius: 60px;
+  border: 15px solid transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container main .arma.rock {
+  background: -webkit-gradient(linear, left top, left bottom, from(white), to(whitesmoke)) padding-box, -webkit-gradient(linear, left top, left bottom, from(#dc2e4e), to(#dd405d)) border-box;
+  background: linear-gradient(white, whitesmoke) padding-box, linear-gradient(to bottom, #dc2e4e, #dd405d) border-box;
+}
+
+.container main .arma.paper {
+  background: -webkit-gradient(linear, left top, left bottom, from(white), to(whitesmoke)) padding-box, -webkit-gradient(linear, left top, left bottom, from(#4865f4), to(#5671f5)) border-box;
+  background: linear-gradient(white, whitesmoke) padding-box, linear-gradient(to bottom, #4865f4, #5671f5) border-box;
+}
+
+.container main .arma.scissors {
+  background: -webkit-gradient(linear, left top, left bottom, from(white), to(whitesmoke)) padding-box, -webkit-gradient(linear, left top, left bottom, from(#ec9e0e), to(#eca922)) border-box;
+  background: linear-gradient(white, whitesmoke) padding-box, linear-gradient(to bottom, #ec9e0e, #eca922) border-box;
+}
+
+.container aside .result {
+  font-size: 50px;
+}
+
+.container aside button {
+  width: 200px;
+  height: 40px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.container footer button {
+  color: white;
+  padding: 10px 25px;
+  border-radius: 10px;
+  background-color: transparent;
+}
+/*# sourceMappingURL=styles.css.map */

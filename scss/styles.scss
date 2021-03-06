@@ -1,0 +1,65 @@
+@import "./variables";
+@import "./chosing";
+.container {
+    background-color: $dark_text;
+    width: 100%;
+    padding: 30px;
+    header {
+        padding: 15px;
+        display: flex;
+        justify-content: space-between;
+        border: 1px solid $header;
+        border-radius: 10px;
+        .scoreContainer {
+            background-color: white;
+            padding: 10px 20px;
+            font-size: 10px;
+            border-radius: 5px;
+            text-align: center;
+            .score {
+                font-size: 35px;
+                color: $score_text;
+            }
+        }
+    }
+    main {
+        height: 400px;
+        .arma {
+            width: 120px;
+            height: 120px;
+            border-radius: 60px;
+            border: 15px solid transparent;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &.rock {
+                background: linear-gradient(white, whitesmoke) padding-box, linear-gradient(to bottom, $rock_color_ini, $rock_color_fin) border-box;
+            }
+            &.paper {
+                background: linear-gradient(white, whitesmoke) padding-box, linear-gradient(to bottom, $paper_color_ini, $paper_color_fin) border-box;
+            }
+            &.scissors {
+                background: linear-gradient(white, whitesmoke) padding-box, linear-gradient(to bottom, $scissors_color_ini, $scissors_color_fin) border-box;
+            }
+        }
+    }
+    aside {
+        .result {
+            font-size: 50px;
+        }
+        button {
+            width: 200px;
+            height: 40px;
+            border-radius: 10px;
+            font-weight: bold;
+        }
+    }
+    footer {
+        button {
+            color: white;
+            padding: 10px 25px;
+            border-radius: 10px;
+            background-color: transparent;
+        }
+    }
+}

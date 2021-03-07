@@ -9,25 +9,27 @@
 .chosing {
   max-width: 800px;
   padding: 1rem;
-  margin: 0 auto;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 200px 200px 200px 200px;
-      grid-template-columns: 200px 200px 200px 200px;
-  -ms-grid-rows: 200px 200px 200px;
-      grid-template-rows: 200px 200px 200px;
   grid-gap: 1rem;
+      grid-template-areas: "paper scissors rock";
 }
 
 .chosing .paper {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
   grid-area: paper;
 }
 
 .chosing .scissors {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
   grid-area: scissors;
 }
 
 .chosing .rock {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
   grid-area: rock;
 }
 
@@ -60,10 +62,6 @@
 .container header .scoreContainer .score {
   font-size: 35px;
   color: #2a46c0;
-}
-
-.container main {
-  height: 400px;
 }
 
 .container main .arma {

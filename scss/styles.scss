@@ -1,5 +1,6 @@
 @import "./variables";
 @import "./chosing";
+@import "./combate";
 .container {
     background-color: $dark_text;
     width: 100%;
@@ -23,7 +24,6 @@
         }
     }
     main {
-        height: 400px;
         .arma {
             width: 120px;
             height: 120px;

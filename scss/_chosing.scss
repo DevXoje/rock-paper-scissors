@@ -1,21 +1,18 @@
 .chosing {
-    max-width: 800px;
-    padding: 1rem;
-    display: grid;
-    grid-gap: 1rem;
-    grid-template-areas: "paper scissors rock";
-    .paper,
-    .scissors,
-    .rock {
-        &:hover {}
+    background-image: url(../images/bg-triangle.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    .items-top {
+        margin-bottom: 100px;
+        justify-content: space-around;
     }
-    .paper {
-        grid-area: paper;
+    .item-bottom {
+        margin-top: 35px;
+        justify-content: center;
     }
-    .scissors {
-        grid-area: scissors;
-    }
-    .rock {
-        grid-area: rock;
+    .item-bottom,
+    .items-top {
+        z-index: 1;
+        display: flex;
     }
 }

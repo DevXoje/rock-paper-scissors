@@ -7,36 +7,83 @@
 }
 
 .chosing {
-  max-width: 800px;
-  padding: 1rem;
-  display: -ms-grid;
-  display: grid;
-  grid-gap: 1rem;
-      grid-template-areas: "paper scissors rock";
+  background-image: url(../images/bg-triangle.svg);
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-.chosing .paper {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: paper;
+.chosing .items-top {
+  margin-bottom: 100px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
-.chosing .scissors {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
-  grid-area: scissors;
+.chosing .item-bottom {
+  margin-top: 35px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.chosing .rock {
-  -ms-grid-row: 1;
-  -ms-grid-column: 3;
-  grid-area: rock;
+.chosing .item-bottom,
+.chosing .items-top {
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.combate {
+  display: none;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-top: 20px;
+}
+
+.combate div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.combate div h2 {
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.combate .result h2 {
+  font-size: 50px;
+}
+
+.combate .result button {
+  height: 50px;
+  width: 200px;
+  border-radius: 5px;
+}
+
+.combate .result button:hover {
+  color: red;
 }
 
 .container {
   background-color: #3b4363;
   width: 100%;
+  height: 100vh;
   padding: 30px;
+}
+
+.container .main_header {
+  width: 100%;
+  margin-bottom: 80px;
 }
 
 .container header {
@@ -64,7 +111,13 @@
   color: #2a46c0;
 }
 
+.container main {
+  max-width: 400px;
+}
+
 .container main .arma {
+  background-color: #1f3756;
+  cursor: pointer;
   width: 120px;
   height: 120px;
   border-radius: 60px;
@@ -95,18 +148,27 @@
   background: linear-gradient(white, whitesmoke) padding-box, linear-gradient(to bottom, #ec9e0e, #eca922) border-box;
 }
 
-.container aside .result {
-  font-size: 50px;
+.container #rules {
+  display: none;
+  position: absolute;
+  top: 20px;
+  background-color: white;
+  width: 365px;
+  padding: 20px;
 }
 
-.container aside button {
-  width: 200px;
-  height: 40px;
-  border-radius: 10px;
-  font-weight: bold;
+.container #rules header {
+  border: none;
+}
+
+.container #rules header #icon_close {
+  cursor: pointer;
 }
 
 .container footer button {
+  position: absolute;
+  right: 20px;
+  bottom: 10px;
   color: white;
   padding: 10px 25px;
   border-radius: 10px;
